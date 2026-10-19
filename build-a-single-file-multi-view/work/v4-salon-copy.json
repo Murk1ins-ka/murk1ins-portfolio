@@ -1,0 +1,94 @@
+{
+  "atelierHero": [
+    "Стрижки, цвет<br>и <em>уход<br>за волосами.</em>",
+    "Tuns, culoare<br>și <em>îngrijire<br>pentru păr.</em>"
+  ],
+  "atelierIntro": [
+    "Подберём форму и оттенок. Покажем, как сохранить результат дома.",
+    "Alegem forma și nuanța potrivită. Îți arătăm cum să păstrezi rezultatul acasă."
+  ],
+  "atelierHours": [
+    "Часы работы",
+    "Program de lucru"
+  ],
+  "atelierHairPhoto": [
+    "Длинные ухоженные волосы на нежно-розовом фоне",
+    "Păr lung îngrijit pe un fundal roz delicat"
+  ],
+  "atelierStylingPhoto": [
+    "Фен для укладки волос",
+    "Uscător de păr"
+  ],
+  "atelierServiceEyebrow": [
+    "СТРИЖКА / ЦВЕТ / УХОД",
+    "TUNS / CULOARE / ÎNGRIJIRE"
+  ],
+  "atelierServiceIntro": [
+    "Выбери услугу — стоимость и длительность уже перед тобой.",
+    "Alege serviciul — prețul și durata sunt afișate de la început."
+  ],
+  "atelierCategory0": [
+    "Форма",
+    "Formă"
+  ],
+  "atelierCategory1": [
+    "Цвет",
+    "Culoare"
+  ],
+  "atelierCategory2": [
+    "Уход",
+    "Îngrijire"
+  ],
+  "atelierCategory3": [
+    "Укладка",
+    "Coafat"
+  ],
+  "cutDesc": [
+    "Консультация, мытьё, стрижка и укладка по форме.",
+    "Consultație, spălare, tuns și coafat potrivit formei."
+  ],
+  "colorDesc": [
+    "Подбор оттенка, окрашивание и завершающая укладка.",
+    "Alegerea nuanței, colorare și coafat final."
+  ],
+  "treatmentDesc": [
+    "Очищение, питательная маска и бережная сушка.",
+    "Curățare, mască nutritivă și uscare delicată."
+  ],
+  "styleDesc": [
+    "Мытьё и укладка: гладкие волосы, объём или локоны.",
+    "Spălare și coafat: păr drept, volum sau bucle."
+  ],
+  "atelierTeamIntro": [
+    "Стрижка, сложный цвет или укладка — выбери своего специалиста.",
+    "Tuns, colorare sau coafat — alege specialistul potrivit."
+  ],
+  "mayaRole": [
+    "Стилист · стрижки и форма",
+    "Stilistă · tuns și formă"
+  ],
+  "ninaRole": [
+    "Колорист · оттенок и блонд",
+    "Coloristă · nuanțe și blond"
+  ],
+  "leoRole": [
+    "Стилист · укладки и уход",
+    "Stilist · coafat și îngrijire"
+  ],
+  "atelierOnline": [
+    "ОНЛАЙН-ЗАПИСЬ",
+    "PROGRAMARE ONLINE"
+  ],
+  "atelierBookingTitle": [
+    "Выбери<br> <em>своё время.</em>",
+    "Alege ora<br> <em>potrivită.</em>"
+  ],
+  "atelierAppointment": [
+    "Твоя запись",
+    "Programarea ta"
+  ],
+  "salonSub": [
+    "СТРИЖКИ · ЦВЕТ · УХОД",
+    "TUNS · CULOARE · ÎNGRIJIRE"
+  ]
+}

@@ -1,0 +1,33 @@
+function salon(){return `<section class="page demo salon"><div class="wrap">
+${nav('salon')}
+<div class="atelier-hero">
+  <div class="atelier-hero-copy">
+    <p class="atelier-eyebrow">MAISON ÉCLAT · ${t('beautyTitle')}</p>
+    <h1 tabindex="-1">${t('atelierHero')}</h1>
+    <p class="atelier-intro">${t('atelierIntro')}</p>
+    <div class="atelier-hero-actions"><button class="btn" data-scroll="booking">${t('book')} ${arrow}</button><button class="atelier-text-button" data-scroll="services">${t('servicesTitle')}</button></div>
+    <div class="atelier-opening"><span>${t('atelierHours')}</span><strong>${t('schedule')}</strong></div>
+  </div>
+  <figure class="atelier-hero-photo">${img('photo-1522337360788-8b13dee7a37e',t('atelierHairPhoto'),'fetchpriority="high"',1200)}<figcaption><span>${t('cut')}</span><span>60 ${t('minutes')} / ${money(65)}</span></figcaption></figure>
+</div>
+<section class="atelier-services" id="services">
+  <div class="atelier-section-head"><div><p class="atelier-eyebrow">${t('atelierServiceEyebrow')}</p><h2>${t('servicesTitle')}</h2></div><p>${t('atelierServiceIntro')}</p></div>
+  <div class="atelier-service-grid">${services.map((s,i)=>`<article class="atelier-service-card"><div class="atelier-service-top"><span class="atelier-service-category">${t('atelierCategory'+i)}</span><span>${s.duration} ${t('minutes')}</span></div><h3>${t(s.id)}</h3><p>${t(s.id+'Desc')}</p><div class="atelier-service-bottom"><strong>${money(s.price)}</strong><button data-service="${s.id}" aria-label="${t('book')}: ${t(s.id)}">${t('book')} <span aria-hidden="true">↗</span></button></div></article>`).join('')}</div>
+</section>
+<section class="atelier-team" id="team">
+  <div class="atelier-section-head"><div><p class="atelier-eyebrow">MAISON ÉCLAT</p><h2>${t('team')}</h2></div><p>${t('atelierTeamIntro')}</p></div>
+  <div class="atelier-team-grid">${people.map(p=>`<article class="atelier-person"><div class="atelier-person-photo">${img(p.image,t('portrait')+': '+t(p.id),'loading="lazy"',650)}</div><div class="atelier-person-info"><div><h3>${t(p.id)}</h3><p>${t(p.id+'Role')}</p></div><button data-specialist="${p.id}" aria-label="${t('chooseSpecialist')}: ${t(p.id)}"><span aria-hidden="true">↗</span></button></div></article>`).join('')}</div>
+</section>
+<section class="atelier-booking" id="booking">
+  <div class="atelier-booking-copy"><p class="atelier-eyebrow">${t('atelierOnline')}</p><h2>${t('atelierBookingTitle')}</h2><p>${t('bookingIntro')}</p><div class="atelier-booking-photo">${img('photo-1522338140262-f46f5913618a',t('atelierStylingPhoto'),'loading="lazy"',700)}</div><div class="atelier-booking-hours">${t('hours')}</div></div>
+  <form class="booking-form atelier-booking-form" id="booking-form" novalidate>
+    <div class="atelier-form-head full"><h3>${t('atelierAppointment')}</h3><span>${t('demo')}</span></div>
+    <label class="field">${t('yourService')}<select id="book-service" required><option value="">${t('chooseService')}</option>${services.map(s=>`<option value="${s.id}" ${booking.service===s.id?'selected':''}>${t(s.id)} · ${money(s.price)}</option>`).join('')}</select></label>
+    <label class="field">${t('yourSpecialist')}<select id="book-specialist" required><option value="">${t('chooseSpecialist')}</option>${people.map(p=>`<option value="${p.id}" ${booking.specialist===p.id?'selected':''}>${t(p.id)}</option>`).join('')}</select></label>
+    <label class="field full">${t('yourDay')}<input id="book-date" type="date" required value="${booking.day}" aria-describedby="date-hint"></label><p class="hint full" id="date-hint">${t('dateHint')}</p>
+    <fieldset class="full"><legend>${t('availableTimes')}</legend><div class="slots" id="time-slots"></div><p class="hint" id="time-message" aria-live="polite"></p></fieldset>
+    <div class="booking-summary full" id="booking-summary"></div><button class="btn full" id="book-submit" disabled>${t('bookDemo')} ${arrow}</button><p class="hint full atelier-disclaimer">${t('bookingDisclaimer')}</p><div class="booking-result full" id="booking-result" role="status" aria-live="polite"></div>
+  </form>
+</section>
+${footer('salon')}
+</div></section>`;}

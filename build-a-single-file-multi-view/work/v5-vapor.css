@@ -1,0 +1,100 @@
+/* VOLT — technical showroom with a persistent catalog rail. */
+.vapor.volt5{--bg:#f4f5f3;--fg:#192326;--muted:#778286;--line:#dce2df;--accent:#5ad7dc;--panel:#e8eeeb;background:var(--bg);color:var(--fg)}
+.vapor.volt5 .wrap{max-width:1320px}
+.vapor.volt5 .volt5-header{background:#fcfdfc;border-bottom:1px solid var(--line);color:var(--fg)}
+.vapor.volt5 .nav{height:84px;border:0}
+.vapor.volt5 .logo{font-size:36px;font-weight:800;font-style:normal;letter-spacing:-2px}
+.vapor.volt5 .logo i{color:#5dcbce}
+.vapor.volt5 .nav-links button{font-size:12px}
+.vapor.volt5 .lang-button{border-color:#dbe1df;border-radius:12px;padding:12px 15px;background:transparent;color:#253237}
+.vapor.volt5 .bag-button{background:#243135;color:white;border-radius:12px;min-height:44px;gap:12px}
+.vapor.volt5 .bag-button b{border-color:#536165;font-size:10px}
+.vapor.volt5 .volt5-showroom{padding-top:34px}
+.vapor.volt5 .volt5-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:25px}
+.vapor.volt5 .volt5-eyebrow{font:10px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em;color:#738184;margin:0 0 13px}
+.vapor.volt5 .volt5-heading h1{font-size:clamp(33px,3.6vw,49px);font-weight:550;letter-spacing:-2.1px;line-height:1.07;margin:0;max-width:980px}
+.vapor.volt5 .volt5-brand-note{flex:none;font:10px/1.5 ui-monospace,monospace;letter-spacing:.08em;color:#768487;padding-bottom:3px;white-space:nowrap}
+.vapor.volt5 .volt5-brand-note span{display:inline-block;margin:0 12px;color:#b2bdbb}
+.vapor.volt5 .volt5-display{border:1px solid #d9e0e2;background:#e7edee;border-radius:26px;overflow:hidden;position:relative}
+.vapor.volt5 .volt5-display-label{display:flex;align-items:center;gap:8px;padding:20px 26px 0;font:10px/1 ui-monospace,monospace;color:#596b6c;text-transform:uppercase;letter-spacing:.06em;position:relative;z-index:1}
+.vapor.volt5 .volt5-status-dot{width:6px;height:6px;border-radius:50%;background:#4bbdc4;display:inline-block}
+.vapor.volt5 .volt5-display-code{margin-left:auto;color:#839491}
+.vapor.volt5 .volt5-device-lineup{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:10px 30px 0}
+.vapor.volt5 .volt5-device{margin:0;position:relative;min-width:0;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:8px;padding:0 27px;height:174px;transform-style:preserve-3d}
+.vapor.volt5 .volt5-device+.volt5-device{border-left:1px solid #ced8db}
+.vapor.volt5 .volt5-device-number{position:absolute;left:15px;top:24px;font:10px ui-monospace,monospace;color:#9ca9a3}
+.vapor.volt5 .volt5-device-image{height:162px;min-width:0;width:100%;transform:translateZ(18px)}
+.vapor.volt5 .volt5-device-image>.asset-cutout{display:block;height:100%;width:100%;filter:drop-shadow(7px 10px 5px #2b44351a)}
+.vapor.volt5 .volt5-device-image>img{height:100%;width:100%;object-fit:contain;filter:drop-shadow(7px 10px 5px #2b44351a)}
+.vapor.volt5 .volt5-device figcaption{display:flex;flex-direction:column;gap:7px;align-items:flex-start;min-width:0;transform:translateZ(10px)}
+.vapor.volt5 .volt5-device figcaption strong{font-size:16px;font-weight:600;letter-spacing:-.35px;white-space:nowrap}
+.vapor.volt5 .volt5-device figcaption span{font-size:10px;color:#7c8b85}
+.vapor.volt5 .volt5-display-foot{display:flex;align-items:center;justify-content:space-between;padding:12px 26px 17px;gap:20px;font-size:10px;color:#7d8b86}
+.vapor.volt5 .volt5-display-foot button{display:inline-flex;align-items:center;gap:13px;font-size:11px;font-weight:600;color:#34494b;background:transparent;border:0;padding:4px 0}
+.vapor.volt5 .volt5-display-foot button span{font-size:17px;line-height:1;color:#4d9ea3;transition:transform .2s}
+.vapor.volt5 .volt5-display-foot button:hover span{transform:translateY(3px)}
+.vapor.volt5 .volt5-catalog{display:grid;grid-template-columns:195px minmax(0,1fr);gap:36px;align-items:start;padding-top:42px;scroll-margin-top:25px}
+.vapor.volt5 .volt5-rail{position:sticky;top:26px;align-self:start;padding-top:5px;min-width:0}
+.vapor.volt5 .volt5-rail>h2{font-size:12px;font-weight:600;letter-spacing:0;margin:0 0 17px;color:#48595d}
+.vapor.volt5 .volt5-types{display:flex;flex-direction:column;gap:5px}
+.vapor.volt5 .volt5-types button{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:45px;border:1px solid transparent;padding:12px 13px;border-radius:13px;background:transparent;color:#73817e;font-size:12px;text-align:left;transition:background .2s,color .2s}
+.vapor.volt5 .volt5-types button:hover{background:#e7edef;color:#253c3b}
+.vapor.volt5 .volt5-types button[aria-pressed=true]{background:#26373d;border-color:#26373d;color:#f9fcfa}
+.vapor.volt5 .volt5-category-name{display:flex;align-items:center;gap:10px}
+.vapor.volt5 .volt5-category-name i{display:block;width:5px;height:5px;border:1px solid currentColor;border-radius:50%;opacity:.5;flex:none}
+.vapor.volt5 .volt5-types button[aria-pressed=true] i{background:#6ce5e8;border-color:#6ce5e8;opacity:1}
+.vapor.volt5 .volt5-category-count{font:10px ui-monospace,monospace;color:inherit;opacity:.55}
+.vapor.volt5 .volt5-filter-heading{border-top:1px solid var(--line);padding-top:25px;margin-top:25px;display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.vapor.volt5 .volt5-filter-heading h3{font-size:12px;letter-spacing:0;font-weight:600;margin:0;color:#48595d}
+.vapor.volt5 .volt5-reset{padding:0;background:none;border:0;font-size:10px;color:#8b9792;text-decoration:underline;text-underline-offset:3px}
+.vapor.volt5 .volt5-reset:hover{color:#283f40}
+.vapor.volt5 .volt5-filter-fields{display:flex;flex-direction:column;gap:19px;margin-top:20px}
+.vapor.volt5 .filter-field{display:flex;flex-direction:column;gap:9px;font-size:10px;line-height:1.4;color:#7a8b83;min-width:0}
+.vapor.volt5 .filter-field select{width:100%;min-width:0;min-height:42px;border:1px solid #d5dfd8;border-radius:12px;background:#fafcfb;color:#42575e;font-size:11px;line-height:1.3;padding:10px 11px}
+.vapor.volt5 .filter-field select:disabled{opacity:.45;cursor:not-allowed}
+.vapor.volt5 .volt5-filter-hint{font-size:10px;line-height:1.7;color:#99a49e;max-width:175px;margin-top:19px}
+.vapor.volt5 .volt5-results{min-width:0}
+.vapor.volt5 .volt5-results-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:20px;min-height:19px;padding:0 2px}
+.vapor.volt5 .volt5-results-heading h2{font-size:14px;letter-spacing:0;font-weight:600;line-height:1.3;margin:0}
+.vapor.volt5 .volt5-results-heading .count{font:10px ui-monospace,monospace;color:#8b9992;white-space:nowrap}
+.vapor.volt5 .products.volt5-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.vapor.volt5 .product.volt5-card{border:1px solid #dde5de;background:#fff;border-radius:24px;padding:0;overflow:hidden;transform-style:preserve-3d;transition:box-shadow .25s,border-color .25s;min-width:0}
+.vapor.volt5 .product.volt5-card:hover{border-color:#acd1d8;box-shadow:0 12px 25px #344e4310}
+.vapor.volt5 .product-photo.volt5-product-photo{background:#fbfcfb;height:242px;aspect-ratio:auto;border-radius:0;padding:40px 34px 17px;position:relative;overflow:hidden}
+.vapor.volt5 .volt5-card-top{position:absolute;top:18px;left:18px;right:18px;display:flex;align-items:center;justify-content:space-between;gap:5px;font-size:9px;color:#98a79d;z-index:1}
+.vapor.volt5 .volt5-stock{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;color:#738b91}
+.vapor.volt5 .volt5-stock i{display:inline-block;flex:none;width:5px;height:5px;border-radius:50%;background:#4cc9d6}
+.vapor.volt5 .volt5-stock.is-unavailable{color:#aaa8a0}
+.vapor.volt5 .volt5-stock.is-unavailable i{background:#c2bfb5}
+.vapor.volt5 .volt5-product-photo>.asset-cutout{width:100%;height:100%;transform:translateY(0);transition:transform .35s cubic-bezier(.22,.61,.36,1)}
+.vapor.volt5 .volt5-product-photo>img{height:100%;width:100%;object-fit:contain;filter:none;transition:transform .35s}
+.vapor.volt5 .product.volt5-card:hover .product-photo>.asset-cutout,.vapor.volt5 .product.volt5-card:hover .product-photo>img{transform:translateY(-5px)}
+.vapor.volt5 .product.volt5-card:hover .product-photo .asset-cutout img{transform:none}
+.vapor.volt5 .volt5-product-info{padding:20px 19px 18px}
+.vapor.volt5 .volt5-manufacturer{font:8px/1.4 ui-monospace,monospace;letter-spacing:.1em;color:#96a49c;margin:0 0 7px}
+.vapor.volt5 .volt5-product-info h3{font-size:16px;font-weight:600;letter-spacing:-.35px;line-height:1.35;margin:0;min-height:43px;color:#263238}
+.vapor.volt5 .volt5-product-info .product-desc{margin:7px 0 0;font-size:11px;line-height:1.5;min-height:32px;color:#859194}
+.vapor.volt5 .volt5-product-meta{display:flex;gap:8px;align-items:center;margin-top:12px;font:9px/1.5 ui-monospace,monospace;color:#99a69b;flex-wrap:wrap}
+.vapor.volt5 .volt5-product-meta>span+span:before{content:'·';padding-right:8px;color:#c0ccc0}
+.vapor.volt5 .volt5-product-meta .volt5-stock-count{margin-left:auto}
+.vapor.volt5 .volt5-product-meta .volt5-stock-count:before{display:none}
+.vapor.volt5 .volt5-purchase{border-top:1px solid #e8eee7;margin-top:17px;padding-top:16px;display:flex;align-items:center;justify-content:space-between;gap:9px}
+.vapor.volt5 .volt5-purchase .price{font:600 20px/1 Arial,sans-serif;letter-spacing:-.6px;white-space:nowrap;color:#25363d}
+.vapor.volt5 .volt5-purchase button{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#e7f7fa;color:#237781;border:0;border-radius:12px;font-size:10px;line-height:1.1;min-height:37px;padding:10px 12px;transition:background .2s,color .2s;min-width:0}
+.vapor.volt5 .volt5-purchase button:hover{background:#26373d;color:#fff}
+.vapor.volt5 .volt5-add-icon{font-size:18px;line-height:.8;font-weight:400}
+.vapor.volt5 .volt5-purchase button:disabled{background:#f0f2ed;color:#a5ad9f;cursor:not-allowed;opacity:1}
+.vapor.volt5 .volt5-purchase button:disabled:hover{background:#f0f2ed;color:#a5ad9f}
+.vapor.volt5 .volt5-empty{background:#fff;border:1px solid #dae5dc;border-radius:24px;grid-column:1/-1;text-align:center;min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;padding:30px;color:#4e6453}
+.vapor.volt5 .volt5-empty>span{font-size:35px;color:#71b4bf}
+.vapor.volt5 .volt5-empty h3{font-size:22px;font-weight:500;letter-spacing:-.5px}
+.vapor.volt5 .volt5-empty p{font-size:12px;color:#8a9c8d;line-height:1.6;max-width:300px}
+.vapor.volt5 .volt5-empty button{font-size:11px;background:#eaf7f9;border:1px solid #dce8de;padding:12px 17px;border-radius:11px;color:#416c77;margin-top:3px}
+.vapor.volt5 .footer{border-top-color:#dce5db;margin-top:55px;color:#8c9b8b;padding-top:28px}
+.vapor.volt5 .footer>span:first-child{font-size:22px;font-weight:800;letter-spacing:-1px;color:#35474d}
+@media(min-width:1400px){.vapor.volt5 .volt5-catalog{grid-template-columns:210px minmax(0,1fr);gap:42px}.vapor.volt5 .product-photo.volt5-product-photo{height:265px}}
+@media(max-width:1150px){.vapor.volt5 .products.volt5-products{grid-template-columns:repeat(2,minmax(0,1fr))}.vapor.volt5 .volt5-catalog{gap:27px;grid-template-columns:180px minmax(0,1fr)}.vapor.volt5 .volt5-device{padding:0 12px;gap:6px}.vapor.volt5 .volt5-device-number{left:8px}.vapor.volt5 .volt5-device figcaption strong{font-size:14px}.vapor.volt5 .volt5-brand-note{font-size:9px}.vapor.volt5 .volt5-product-info h3{min-height:22px}.vapor.volt5 .volt5-product-info .product-desc{min-height:33px}}
+@media(max-width:850px){.vapor.volt5 .volt5-heading{align-items:flex-start}.vapor.volt5 .volt5-brand-note{padding-top:1px;max-width:80px;white-space:normal;line-height:1.8}.vapor.volt5 .volt5-brand-note span{margin:0 5px}.vapor.volt5 .volt5-device-lineup{padding:12px 18px 0}.vapor.volt5 .volt5-device{grid-template-columns:1fr;height:190px;gap:0;padding:0 12px 12px;text-align:center}.vapor.volt5 .volt5-device-image{height:133px;max-width:95px;justify-self:center}.vapor.volt5 .volt5-device figcaption{align-items:center;gap:3px}.vapor.volt5 .volt5-device figcaption strong{font-size:13px}.vapor.volt5 .volt5-device figcaption span{font-size:9px}.vapor.volt5 .volt5-device-number{top:5px;left:9px}.vapor.volt5 .volt5-catalog{grid-template-columns:160px minmax(0,1fr);gap:22px}.vapor.volt5 .volt5-types button{font-size:11px;padding-inline:10px}.vapor.volt5 .product-photo.volt5-product-photo{height:215px;padding-inline:28px}.vapor.volt5 .volt5-card-top{font-size:8px;left:16px;right:16px}.vapor.volt5 .volt5-stock span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.vapor.volt5 .volt5-product-info{padding:17px}.vapor.volt5 .volt5-product-info h3{min-height:39px;font-size:15px}.vapor.volt5 .volt5-add-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.vapor.volt5 .volt5-purchase button{width:37px;min-width:37px;padding:10px}.vapor.volt5 .volt5-add-icon{font-size:21px}}
+@media(max-width:660px){.vapor.volt5 .nav{height:74px}.vapor.volt5 .logo{font-size:32px}.vapor.volt5 .nav-actions{gap:8px}.vapor.volt5 .lang-button{padding:10px 12px}.vapor.volt5 .bag-button{padding:11px 13px;min-height:41px}.vapor.volt5 .volt5-showroom{padding-top:27px}.vapor.volt5 .volt5-heading{gap:15px;margin-bottom:20px}.vapor.volt5 .volt5-eyebrow{font-size:9px;margin-bottom:11px}.vapor.volt5 .volt5-heading h1{font-size:36px;letter-spacing:-1.6px;max-width:380px}.vapor.volt5 .volt5-brand-note{display:none}.vapor.volt5 .volt5-display{border-radius:22px}.vapor.volt5 .volt5-display-label{padding:17px 18px 0;font-size:9px}.vapor.volt5 .volt5-device-lineup{padding:13px 10px 0}.vapor.volt5 .volt5-device{height:182px;padding-inline:8px}.vapor.volt5 .volt5-device-image{height:128px}.vapor.volt5 .volt5-device figcaption strong{font-size:12px}.vapor.volt5 .volt5-device figcaption span{font-size:8px}.vapor.volt5 .volt5-device-number{font-size:8px;left:5px}.vapor.volt5 .volt5-display-foot{padding:8px 18px 15px;font-size:9px;gap:12px}.vapor.volt5 .volt5-display-foot button{font-size:10px;gap:9px}.vapor.volt5 .volt5-catalog{display:block;padding-top:29px}.vapor.volt5 .volt5-rail{position:static;padding:0;margin:0 0 27px}.vapor.volt5 .volt5-rail>h2{display:none}.vapor.volt5 .volt5-types{flex-direction:row;gap:6px;justify-content:stretch}.vapor.volt5 .volt5-types button{flex:1;padding:12px;font-size:11px;min-height:43px;background:#e9eeee;gap:10px;border-radius:12px}.vapor.volt5 .volt5-category-name{gap:8px}.vapor.volt5 .volt5-types button[aria-pressed=true]{background:#26373d}.vapor.volt5 .volt5-category-count{font-size:9px}.vapor.volt5 .volt5-filter-heading{margin-top:19px;padding-top:18px}.vapor.volt5 .volt5-filter-heading h3{font-size:11px}.vapor.volt5 .volt5-filter-fields{flex-direction:row;gap:12px;margin-top:15px}.vapor.volt5 .filter-field{flex:1;font-size:10px;gap:7px}.vapor.volt5 .filter-field select{font-size:11px;border-radius:11px;min-height:40px}.vapor.volt5 .volt5-filter-hint{font-size:9px;max-width:none;margin-top:11px}.vapor.volt5 .volt5-results-heading{margin-bottom:16px}.vapor.volt5 .products.volt5-products{gap:14px}.vapor.volt5 .product.volt5-card{border-radius:22px}.vapor.volt5 .product-photo.volt5-product-photo{height:225px;padding:35px 32px 14px}.vapor.volt5 .volt5-product-info h3{min-height:40px}.vapor.volt5 .volt5-purchase .price{font-size:20px}.vapor.volt5 .footer{margin-top:40px}}
+@media(max-width:420px){.vapor.volt5 .nav-actions{gap:6px}.vapor.volt5 .logo{font-size:29px}.vapor.volt5 .lang-button{font-size:10px;padding:10px}.vapor.volt5 .bag-button{font-size:11px;padding:10px;gap:7px}.vapor.volt5 .volt5-heading h1{font-size:32px;letter-spacing:-1.35px;line-height:1.12}.vapor.volt5 .volt5-display-label{padding:16px 16px 0;font-size:8px}.vapor.volt5 .volt5-device-lineup{padding:12px 5px 0}.vapor.volt5 .volt5-device{height:158px;padding:0 5px 9px}.vapor.volt5 .volt5-device-image{height:112px;max-width:82px}.vapor.volt5 .volt5-device figcaption strong{font-size:10px;letter-spacing:-.15px}.vapor.volt5 .volt5-device figcaption span{font-size:7px}.vapor.volt5 .volt5-device-number{font-size:7px;left:6px}.vapor.volt5 .volt5-display-foot{font-size:8px;padding:8px 16px 14px}.vapor.volt5 .volt5-display-foot button{font-size:9px;gap:7px}.vapor.volt5 .volt5-types{gap:5px}.vapor.volt5 .volt5-types button{padding:11px 9px;font-size:10px;gap:6px}.vapor.volt5 .volt5-category-name{gap:6px}.vapor.volt5 .volt5-category-name i{width:4px;height:4px}.vapor.volt5 .volt5-category-count{font-size:8px}.vapor.volt5 .volt5-filter-fields{gap:10px}.vapor.volt5 .filter-field select{font-size:10px;padding-inline:8px}.vapor.volt5 .volt5-results-heading h2{font-size:13px}.vapor.volt5 .volt5-results-heading .count{font-size:9px}.vapor.volt5 .products.volt5-products{gap:11px}.vapor.volt5 .product.volt5-card{border-radius:19px}.vapor.volt5 .product-photo.volt5-product-photo{height:180px;padding:31px 22px 10px}.vapor.volt5 .volt5-card-top{left:13px;right:13px;top:14px;font-size:7px}.vapor.volt5 .volt5-product-info{padding:14px 12px}.vapor.volt5 .volt5-manufacturer{font-size:7px;margin-bottom:6px;letter-spacing:.07em}.vapor.volt5 .volt5-product-info h3{font-size:13px;min-height:36px;line-height:1.4;letter-spacing:-.2px;overflow-wrap:anywhere}.vapor.volt5 .volt5-product-info .product-desc{font-size:9px;min-height:28px;line-height:1.5;margin-top:6px}.vapor.volt5 .volt5-product-meta{font-size:7px;gap:5px;margin-top:10px}.vapor.volt5 .volt5-product-meta>span+span:before{padding-right:5px}.vapor.volt5 .volt5-product-meta .volt5-stock-count{display:none}.vapor.volt5 .volt5-purchase{padding-top:12px;margin-top:13px;gap:7px}.vapor.volt5 .volt5-purchase .price{font-size:18px}.vapor.volt5 .volt5-purchase button{width:34px;min-width:34px;min-height:34px;border-radius:11px;padding:8px}.vapor.volt5 .volt5-add-icon{font-size:19px}.vapor.volt5 .volt5-empty{padding:25px 18px;min-height:260px}.vapor.volt5 .volt5-empty h3{font-size:19px}}
+@media(prefers-reduced-motion:reduce){.vapor.volt5 .volt5-device,.vapor.volt5 .volt5-device-image,.vapor.volt5 .volt5-card,.vapor.volt5 .volt5-product-photo>.asset-cutout,.vapor.volt5 .volt5-product-photo>img{transform:none!important;transition:none!important}.vapor.volt5 .volt5-display-foot button span{transition:none}.vapor.volt5 .product.volt5-card:hover .product-photo>.asset-cutout,.vapor.volt5 .product.volt5-card:hover .product-photo>img,.vapor.volt5 .volt5-display-foot button:hover span{transform:none}}

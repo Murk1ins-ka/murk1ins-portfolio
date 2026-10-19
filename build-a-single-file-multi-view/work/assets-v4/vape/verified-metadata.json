@@ -1,0 +1,116 @@
+{
+  "pod1": {
+    "actualFormat": "PNG",
+    "mode": "RGBA",
+    "size": [
+      999,
+      999
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "visibleBounds": [
+      432,
+      125,
+      590,
+      852
+    ],
+    "bytes": 102299
+  },
+  "pod2": {
+    "actualFormat": "PNG",
+    "mode": "RGBA",
+    "size": [
+      999,
+      999
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "visibleBounds": [
+      441,
+      204,
+      587,
+      832
+    ],
+    "bytes": 137165
+  },
+  "pod3": {
+    "actualFormat": "PNG",
+    "mode": "RGBA",
+    "size": [
+      1000,
+      1000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "visibleBounds": [
+      321,
+      124,
+      749,
+      826
+    ],
+    "bytes": 122088
+  },
+  "liquid1": {
+    "actualFormat": "PNG",
+    "mode": "RGBA",
+    "size": [
+      800,
+      1092
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "visibleBounds": [
+      290,
+      77,
+      496,
+      1015
+    ],
+    "bytes": 159771
+  },
+  "liquid2": {
+    "actualFormat": "PNG",
+    "mode": "RGBA",
+    "size": [
+      800,
+      1092
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "visibleBounds": [
+      290,
+      77,
+      496,
+      1015
+    ],
+    "bytes": 163089
+  },
+  "liquid3": {
+    "actualFormat": "PNG",
+    "mode": "RGBA",
+    "size": [
+      800,
+      1092
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "visibleBounds": [
+      290,
+      77,
+      496,
+      1015
+    ],
+    "bytes": 160769
+  }
+}

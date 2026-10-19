@@ -1,0 +1,13 @@
+{
+  "volt5Title": ["Устройства и жидкости", "Dispozitive și lichide"],
+  "volt5XrosSeries": ["Линейка XROS", "Seria XROS"],
+  "volt5DeviceLabel": ["POD-системы Vaporesso", "Sisteme POD Vaporesso"],
+  "volt5ToCatalog": ["К каталогу", "Vezi catalogul"],
+  "volt5CatalogFilters": ["Категории и фильтры каталога", "Categorii și filtre de catalog"],
+  "volt5Categories": ["Категории", "Categorii"],
+  "volt5Filters": ["Фильтры", "Filtre"],
+  "volt5Reset": ["Сбросить", "Resetează"],
+  "volt5FilterHint": ["Вкус и крепость — только для жидкостей.", "Aroma și concentrația se aplică doar lichidelor."],
+  "volt5Products": ["В каталоге", "În catalog"],
+  "volt5DeviceFormat": ["POD-система", "Sistem POD"]
+}

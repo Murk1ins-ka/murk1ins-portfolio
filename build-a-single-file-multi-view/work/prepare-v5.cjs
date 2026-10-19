@@ -1,0 +1,23 @@
+const fs=require('node:fs'),path=require('node:path');
+const read=n=>fs.readFileSync(path.join(__dirname,n),'utf8').replace(/^\uFEFF/,'');
+let js=read('v4.js');
+const copy=Object.assign({},...['street','vapor','salon'].map(n=>JSON.parse(read('v5-'+n+'-copy.json'))));
+copy.atelierBookingTitle=copy.atelierBookingTitle.map(s=>s.replace('<br><em>','<br> <em>'));
+js=js.replace('const t=k=>',()=>`Object.assign(copy,${JSON.stringify(copy)});\nconst t=k=>`);
+const start=js.indexOf('function street(){'),end=js.indexOf('function renderApp(){');
+const preview=`function projectPreview(type){
+if(type==='street')return \`<div class="project-visual preview-fashion preview-fashion-v5"><div class="preview-brand">OFFGRID<sup>®</sup><span>DROP / 001</span></div><div class="preview-fashion-items">\${img('hoodie','','loading="lazy"')}\${img('jeans','','loading="lazy"')}</div><div class="preview-bottom-line">\${t('collection')} <span>↗</span></div></div>\`;
+if(type==='vapor')return \`<div class="project-visual preview-vapor preview-vapor-v5"><div class="preview-brand">VOLT<span>POD / LIQUID</span></div><div class="preview-vape-items">\${img('pod1','','loading="lazy"')}\${img('pod2','','loading="lazy"')}\${img('pod3','','loading="lazy"')}</div><div class="preview-bottom-line">\${t('type_device')} / \${t('type_liquid')} <span>↗</span></div></div>\`;
+return \`<div class="project-visual preview-salon preview-salon-v5"><div class="preview-salon-type"><span>maison<br><i>éclat</i></span><small>\${t('beautyTitle')}</small></div>\${img('photo-1522337360788-8b13dee7a37e',t('beautyTitle'),'loading="lazy"',800)}<span class="preview-salon-arrow">↗</span></div>\`;
+}\n`;
+js=js.slice(0,start)+read('v5-street-template.txt')+'\n'+read('v5-vapor-template.txt')+'\n'+read('v5-salon-template.txt')+'\n'+preview+js.slice(end);
+js=js.replace("street:'#f4f3ef',vapor:'#f1f4f7',salon:'#f7f4ee'","street:'#0c0c0e',vapor:'#f3f6f5',salon:'#faf6ef'");
+js=js.replace("if(b.hasAttribute('data-scroll'))jump(b.dataset.scroll);","if(b.hasAttribute('data-scroll')){if(b.tagName==='A')e.preventDefault();jump(b.dataset.scroll);}");
+js=js.replace("function jump(id){", "function jump(id){");
+js=js.replace("readCarts();route(true);if(!lang)openLanguage();",()=>read('v5-motion.js')+'\nreadCarts();route(true);if(!lang)openLanguage();');
+new Function(js);fs.writeFileSync(path.join(__dirname,'v5.js'),js);
+fs.writeFileSync(path.join(__dirname,'v5.css'),read('v4.css')+'\n'+['street','vapor','salon','motion','portfolio'].map(n=>read('v5-'+n+'.css')).join('\n'));
+let builder=read('build-v4.cjs').replaceAll("'v4.css'","'v5.css'").replaceAll("'v4.js'","'v5.js'").replaceAll("'v4-preview.html'","'v5-preview.html'");
+builder=builder.replace('<span id="back-label"></span></aside>', '<span id="back-label"></span><button id="motion-toggle" type="button" aria-label="Отключить анимации" aria-pressed="true">Ⅱ</button></aside>');
+fs.writeFileSync(path.join(__dirname,'build-v5.cjs'),builder);
+console.log('V5 source ready');

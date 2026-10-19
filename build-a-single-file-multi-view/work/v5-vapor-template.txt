@@ -1,0 +1,44 @@
+function vapor(){return `<section class="page demo vapor volt5" aria-label="VOLT">
+  <div class="volt5-header"><div class="wrap">${nav('vapor')}</div></div>
+  <div class="wrap">
+    <section class="volt5-showroom" aria-labelledby="volt5-title">
+      <div class="volt5-heading" data-reveal>
+        <div><p class="volt5-eyebrow">VOLT / ${t('catalog')}</p><h1 id="volt5-title" tabindex="-1" class="motion-line"><span>${t('volt5Title')}</span></h1></div>
+        <p class="volt5-brand-note">VAPORESSO <span aria-hidden="true">/</span> RIOT</p>
+      </div>
+      <div class="volt5-display" data-reveal>
+        <div class="volt5-display-label"><span class="volt5-status-dot" aria-hidden="true"></span><span>${t('volt5XrosSeries')}</span><span class="volt5-display-code" aria-hidden="true">01—03</span></div>
+        <div class="volt5-device-lineup">
+          ${[['pod1','XROS Pro','Silver'],['pod2','XROS 4 Mini','Ice Blue'],['pod3','XROS 4 Nano','Graphite Black']].map(([image,name,color],i)=>`<figure class="volt5-device" data-tilt><span class="volt5-device-number" aria-hidden="true">0${i+1}</span><div class="volt5-device-image" data-parallax="0.04">${img(image,'','fetchpriority="high"')}</div><figcaption><strong>${name}</strong><span>${color}</span></figcaption></figure>`).join('')}
+        </div>
+        <div class="volt5-display-foot"><span>${t('volt5DeviceLabel')}</span><button data-scroll="vapor-catalog">${t('volt5ToCatalog')} <span aria-hidden="true">↓</span></button></div>
+      </div>
+    </section>
+    <section class="volt5-catalog" id="vapor-catalog" aria-labelledby="volt5-catalog-title">
+      <aside class="volt5-rail" aria-label="${t('volt5CatalogFilters')}">
+        <h2>${t('volt5Categories')}</h2>
+        <div class="volt5-types" role="group" aria-label="${t('productType')}">${['all','device','liquid'].map(type=>`<button data-vape-type="${type}" aria-pressed="${vapeType===type}"><span class="volt5-category-name"><i aria-hidden="true"></i>${t('type_'+type)}</span><span class="volt5-category-count">${String(type==='all'?concepts.length:concepts.filter(p=>p.type===type).length).padStart(2,'0')}</span></button>`).join('')}</div>
+        <div class="volt5-filter-heading"><h3>${t('volt5Filters')}</h3><button class="volt5-reset" data-reset>${t('volt5Reset')}</button></div>
+        <div class="volt5-filter-fields">
+          <label class="filter-field">${t('flavor')}<select id="flavor-filter" ${vapeType==='device'?'disabled':''}>${[['all','allFlavors'],['fruit','fruit'],['ice','ice'],['classic','classic']].map(([v,k])=>`<option value="${v}" ${flavor===v?'selected':''}>${t(k)}</option>`).join('')}</select></label>
+          <label class="filter-field">${t('nicotine')}<select id="nicotine-filter" ${vapeType==='device'?'disabled':''}><option value="all" ${nicotine==='all'?'selected':''}>${t('allLabels')}</option>${[...new Set(concepts.filter(p=>p.type==='liquid').map(p=>p.nicotine))].map(n=>`<option value="${n}" ${nicotine===String(n)?'selected':''}>${n} ${t('mg')}</option>`).join('')}</select></label>
+        </div>
+        <p class="volt5-filter-hint">${t('volt5FilterHint')}</p>
+      </aside>
+      <div class="volt5-results">
+        <div class="volt5-results-heading"><h2 id="volt5-catalog-title">${t('volt5Products')}</h2><span class="count" id="vapor-count" aria-live="polite"></span></div>
+        <div class="products volt5-products" id="vapor-products"></div>
+      </div>
+    </section>
+    ${footer('vapor')}
+  </div>
+</section>`;}
+
+function renderConcepts(){
+ const list=concepts.filter(p=>(vapeType==='all'||p.type===vapeType)&&(flavor==='all'||p.type==='liquid'&&p.family===flavor)&&(nicotine==='all'||p.type==='liquid'&&String(p.nicotine)===nicotine));
+ $('#vapor-count').textContent=`${t('items')}: ${list.length}`;
+ $('#vapor-products').innerHTML=list.length?list.map((p,i)=>`<article class="product volt5-card" data-tilt>
+   <div class="product-photo volt5-product-photo"><div class="volt5-card-top"><span>${t('type_'+p.type)}</span><span class="volt5-stock ${p.stock?'':'is-unavailable'}" title="${t(p.stock?(p.stock<5?'lowStock':'stock'):'outStock')}"><i aria-hidden="true"></i><span>${t(p.stock?(p.stock<5?'lowStock':'stock'):'outStock')}</span></span></div>${img(p.image,t(p.id),'loading="lazy"')}</div>
+   <div class="volt5-product-info"><p class="volt5-manufacturer">${p.type==='device'?'VAPORESSO':'RIOT CLASSICS'}</p><h3>${t(p.id)}</h3><p class="product-desc">${p.type==='liquid'?t(p.id+'d'):t('deviceOnly')}</p><div class="volt5-product-meta">${p.type==='liquid'?`<span>50 ${t('ml')}</span><span>${p.nicotine} ${t('mg')}</span>`:`<span>${t('volt5DeviceFormat')}</span>`}<span class="volt5-stock-count">${p.stock} ${t('units')}</span></div><div class="volt5-purchase"><span class="price">${money(p.price)}</span><button data-add-concept="${p.id}" ${!p.stock?'disabled':''} aria-label="${t(p.stock?'add':'unavailable')}: ${t(p.id)}"><span class="volt5-add-label">${t(p.stock?'add':'unavailable')}</span><span class="volt5-add-icon" aria-hidden="true">${p.stock?'+':'—'}</span></button></div></div>
+ </article>`).join(''):`<div class="empty volt5-empty"><span aria-hidden="true">⌕</span><h3>${t('emptyTitle')}</h3><p>${t('emptyText')}</p><button data-reset>${t('reset')}</button></div>`;
+}

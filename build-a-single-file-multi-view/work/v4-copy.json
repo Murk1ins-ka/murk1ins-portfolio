@@ -1,0 +1,106 @@
+{
+  "streetNew": [
+    "НОВЫЙ<br>ДРОП.",
+    "NOUA<br>COLECȚIE."
+  ],
+  "streetNewDesc": [
+    "Свободные лонгсливы, худи и baggy-деним.",
+    "Bluze lejere, hanorace și denim baggy."
+  ],
+  "viewCollection": [
+    "Смотреть коллекцию",
+    "Vezi colecția"
+  ],
+  "lookEdition": [
+    "Три вещи / один образ",
+    "Trei piese / o ținută"
+  ],
+  "lookLayers": [
+    "Чёрный.<br>В несколько слоёв.",
+    "Negru.<br>În mai multe straturi."
+  ],
+  "lookLayersDesc": [
+    "Выцветший хлопок, объёмное худи и серебристые детали.",
+    "Bumbac prespălat, hanorac larg și detalii argintii."
+  ],
+  "vapeNew": [
+    "Устройства<br>и жидкости.",
+    "Dispozitive<br>și lichide."
+  ],
+  "vapeNewDesc": [
+    "POD-системы и жидкости в одном каталоге.",
+    "Sisteme POD și lichide într-un singur catalog."
+  ],
+  "vapeStoreLabel": [
+    "Вейп-шоп",
+    "Magazin de vape-uri"
+  ],
+  "productType": [
+    "Тип товара",
+    "Tipul produsului"
+  ],
+  "type_all": [
+    "Всё",
+    "Toate"
+  ],
+  "type_device": [
+    "Устройства",
+    "Dispozitive"
+  ],
+  "type_liquid": [
+    "Жидкости",
+    "Lichide"
+  ],
+  "deviceOnly": [
+    "POD-система · без жидкости",
+    "Sistem POD · fără lichid"
+  ],
+  "chooseSize": [
+    "Выбери размер",
+    "Alege mărimea"
+  ],
+  "vapeDesc": [
+    "POD-системы, жидкости и удобный каталог.",
+    "Sisteme POD, lichide și un catalog intuitiv."
+  ],
+  "fashionDesc": [
+    "Y2K, свободный крой и предметный каталог.",
+    "Y2K, croieli lejere și un catalog de piese."
+  ],
+  "beautyDesc": [
+    "Услуги, команда и онлайн-запись.",
+    "Servicii, echipă și programări online."
+  ],
+  "vapeAssetCredit": [
+    "Предметные фотографии Vaporesso и Riot. Цены и остатки демонстрационные.",
+    "Fotografii de produs Vaporesso și Riot. Prețurile și stocurile sunt demonstrative."
+  ],
+  "fruit": [
+    "Ягодные",
+    "Fructe de pădure"
+  ],
+  "ice": [
+    "Лимонад",
+    "Limonadă"
+  ],
+  "classic": [
+    "Цитрусовые",
+    "Citrice"
+  ],
+  "v4d": [
+    "Голубая малина, ментол",
+    "Zmeură albastră, mentol"
+  ],
+  "v5d": [
+    "Клубничный лимонад, лимон",
+    "Limonadă de căpșuni, lămâie"
+  ],
+  "v6d": [
+    "Лайм, лимон",
+    "Lime, lămâie"
+  ],
+  "ml": [
+    "мл",
+    "ml"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": 7808632881292,
+  "title": "Classics - Blue Burst Shortfill",
+  "handle": "riot-originals-blue-burst-shortfill",
+  "description": "<p>Immerse yourself into sub-zero temperatures with this icy blue raspberry slush, a menthol explosion to set your senses alight. Packaged in a 60ml bottle with 50ml of e-liquid, there's room to add an optional 10ml 18mg nicotine shot. Plus, every shortfill comes with a free nic shot (add to your basket). Get ready to make every vape a cool adventure.</p>",
+  "published_at": "2024-05-01T14:47:35+01:00",
+  "created_at": "2024-06-11T11:10:53+01:00",
+  "vendor": "Riot Classics",
+  "type": "E-Liquid",
+  "tags": [
+    "50ml",
+    "70VG/30PG",
+    "Free Nic Shot",
+    "Shortfill"
+  ],
+  "price": 1299,
+  "price_min": 1299,
+  "price_max": 1299,
+  "available": true,
+  "price_varies": false,
+  "compare_at_price": null,
+  "compare_at_price_min": 0,
+  "compare_at_price_max": 0,
+  "compare_at_price_varies": false,
+  "variants": [
+    {
+      "id": 42966735224972,
+      "title": "Default Title",
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "sku": "CLSBB500MGUKSF",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": null,
+      "available": true,
+      "name": "Classics - Blue Burst Shortfill",
+      "public_title": null,
+      "options": [
+        "Default Title"
+      ],
+      "price": 1299,
+      "weight": 73,
+      "compare_at_price": null,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    }
+  ],
+  "images": [
+    "//cdn.shopify.com/s/files/1/0552/0447/9116/files/0000_63_a0db2d63-1907-44c8-8010-8874bb01fd2f.webp?v=1744106709"
+  ],
+  "featured_image": "//cdn.shopify.com/s/files/1/0552/0447/9116/files/0000_63_a0db2d63-1907-44c8-8010-8874bb01fd2f.webp?v=1744106709",
+  "options": [
+    {
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "url": "/products/riot-originals-blue-burst-shortfill",
+  "media": [
+    {
+      "alt": "Riot Labs Classics Blue Burst Shortfill E-liquid",
+      "id": 26059192991884,
+      "position": 1,
+      "preview_image": {
+        "aspect_ratio": 0.733,
+        "height": 1092,
+        "width": 800,
+        "src": "https://cdn.shopify.com/s/files/1/0552/0447/9116/files/0000_63_a0db2d63-1907-44c8-8010-8874bb01fd2f.webp?v=1744106709"
+      },
+      "aspect_ratio": 0.733,
+      "height": 1092,
+      "media_type": "image",
+      "src": "https://cdn.shopify.com/s/files/1/0552/0447/9116/files/0000_63_a0db2d63-1907-44c8-8010-8874bb01fd2f.webp?v=1744106709",
+      "width": 800
+    }
+  ],
+  "requires_selling_plan": false,
+  "selling_plan_groups": []
+}

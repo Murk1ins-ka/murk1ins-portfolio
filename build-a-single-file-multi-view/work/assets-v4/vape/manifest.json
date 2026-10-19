@@ -1,0 +1,65 @@
+{
+  "pod1": {
+    "file": "xros-pro-silver.png",
+    "name": "Vaporesso XROS Pro",
+    "variant": "Silver",
+    "sourceUrl": "https://store.vaporesso.com/products/xros-pro",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0071/4758/5626/files/XROSPRO-silver_b212b555-659a-4b37-a713-6e9ca8bbf264.png?v=1783425126",
+    "transparent": true,
+    "format": "PNG",
+    "size": [999, 999]
+  },
+  "pod2": {
+    "file": "xros-4-mini-ice-blue.png",
+    "name": "Vaporesso XROS 4 Mini",
+    "variant": "Ice Blue",
+    "sourceUrl": "https://store.vaporesso.com/products/xros-4-mini",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0071/4758/5626/files/XROS4MINI-iceblue.png?v=1783424284",
+    "transparent": true,
+    "format": "PNG",
+    "size": [999, 999]
+  },
+  "pod3": {
+    "file": "xros-4-nano-graphite.png",
+    "name": "Vaporesso XROS 4 Nano",
+    "variant": "Graphite Black",
+    "sourceUrl": "https://store.vaporesso.com/products/xros-4-nano",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0071/4758/5626/files/XROS4NANO_graphiteblack.png?v=1783424533",
+    "transparent": true,
+    "format": "PNG",
+    "size": [1000, 1000]
+  },
+  "liquid1": {
+    "file": "riot-blue-burst.png",
+    "name": "Riot Classics Blue Burst",
+    "variant": "50 ml · 0 mg",
+    "sourceUrl": "https://rioteliquid.com/products/riot-originals-blue-burst-shortfill",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0552/0447/9116/files/0000_63_a0db2d63-1907-44c8-8010-8874bb01fd2f.webp?v=1744106709",
+    "transparent": true,
+    "format": "PNG",
+    "size": [800, 1092],
+    "note": "CDN source URL ends with .webp but delivered bytes are a PNG file. Saved with the correct .png extension."
+  },
+  "liquid2": {
+    "file": "riot-pink-grenade.png",
+    "name": "Riot Classics Pink Grenade",
+    "variant": "50 ml · 0 mg",
+    "sourceUrl": "https://rioteliquid.com/products/riot-originals-pink-grenade-shortfill",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0552/0447/9116/files/0000_67_5f112c3f-a148-4967-8231-33aac0f411b5.webp?v=1744106710",
+    "transparent": true,
+    "format": "PNG",
+    "size": [800, 1092],
+    "note": "CDN source URL ends with .webp but delivered bytes are a PNG file. Saved with the correct .png extension."
+  },
+  "liquid3": {
+    "file": "riot-sublime.png",
+    "name": "Riot Classics Sublime",
+    "variant": "50 ml · 0 mg",
+    "sourceUrl": "https://rioteliquid.com/products/riot-originals-sublime-shortfill",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0552/0447/9116/files/0000_69_ea146e2d-db85-40ec-8b81-e566152d59f3.webp?v=1744106707",
+    "transparent": true,
+    "format": "PNG",
+    "size": [800, 1092],
+    "note": "CDN source URL ends with .webp but delivered bytes are a PNG file. Saved with the correct .png extension."
+  }
+}

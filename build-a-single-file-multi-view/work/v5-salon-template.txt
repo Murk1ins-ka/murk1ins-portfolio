@@ -1,0 +1,32 @@
+function salon(){return `<section class="page demo salon"><div class="wrap">
+${nav('salon')}
+<div class="eclat-hero">
+  <div class="eclat-hero-copy" data-reveal>
+    <p class="eclat-kicker">${t('beautyTitle')} / MAISON ÉCLAT</p>
+    <h1 tabindex="-1">${t('eclatHero')}</h1>
+    <div class="eclat-hero-bottom"><p>${t('atelierIntro')}</p><button class="btn eclat-hero-button" data-scroll="booking">${t('book')} ${arrow}</button></div>
+    <div class="eclat-hero-hours"><span>${t('atelierHours')}</span><strong>${t('schedule')}</strong><button data-scroll="services" aria-label="${t('servicesTitle')}">↓</button></div>
+  </div>
+  <figure class="eclat-hero-photo" data-parallax="0.08">${img('photo-1522337360788-8b13dee7a37e',t('atelierHairPhoto'),'fetchpriority="high"',1200)}<figcaption>${t('eclatHairCaption')}</figcaption></figure>
+</div>
+<section class="eclat-services" id="services">
+  <div class="eclat-section-head" data-reveal><div><p class="eclat-kicker">${t('eclatMenu')}</p><h2>${t('servicesTitle')}</h2></div><p>${t('eclatServiceIntro')}</p></div>
+  <div class="eclat-service-list">${services.map((s,i)=>`<details class="eclat-service" name="eclat-services" ${i===0?'open':''} data-reveal><summary><span class="eclat-service-index">0${i+1}</span><h3>${t(s.id)}</h3><span class="eclat-service-duration">${s.duration} ${t('minutes')}</span><span class="eclat-service-price">${money(s.price)}</span><span class="eclat-toggle" aria-hidden="true"></span></summary><div class="eclat-service-body"><div><span class="eclat-small-label">${t('eclatIncluded')} · ${s.duration} ${t('minutes')}</span><p>${t(s.id+'Desc')}</p></div><button class="btn" data-service="${s.id}" aria-label="${t('book')}: ${t(s.id)}">${t('book')} ${arrow}</button></div></details>`).join('')}</div>
+</section>
+<section class="eclat-team" id="team">
+  <div class="eclat-section-head" data-reveal><div><p class="eclat-kicker">MAISON ÉCLAT</p><h2>${t('eclatTeamTitle')}</h2></div><p>${t('atelierTeamIntro')}</p></div>
+  <div class="eclat-roster">${people.map(p=>`<article class="eclat-person" data-reveal><div class="eclat-person-name"><h3>${t(p.id)}</h3><p>${t(p.id+'Role')}</p></div><div class="eclat-person-photo" data-tilt>${img(p.image,t('portrait')+': '+t(p.id),'loading="lazy"',600)}</div><button class="eclat-person-button" data-specialist="${p.id}" aria-label="${t('chooseSpecialist')}: ${t(p.id)}"><span>${t('eclatChoose')}</span><b aria-hidden="true">↗</b></button></article>`).join('')}</div>
+</section>
+<section class="eclat-booking" id="booking" data-reveal>
+  <div class="eclat-booking-copy"><p class="eclat-kicker">${t('atelierOnline')}</p><h2>${t('atelierBookingTitle')}</h2><p>${t('bookingIntro')}</p><div class="eclat-booking-detail"><div class="eclat-booking-photo" data-parallax="0.06">${img('photo-1522338140262-f46f5913618a',t('atelierStylingPhoto'),'loading="lazy"',600)}</div><div class="eclat-booking-hours">${t('hours')}</div></div></div>
+  <form class="booking-form eclat-booking-form" id="booking-form" novalidate>
+    <div class="eclat-form-head full"><h3>${t('atelierAppointment')}</h3><span>${t('demo')}</span></div>
+    <label class="field">${t('yourService')}<select id="book-service" required><option value="">${t('chooseService')}</option>${services.map(s=>`<option value="${s.id}" ${booking.service===s.id?'selected':''}>${t(s.id)} · ${money(s.price)}</option>`).join('')}</select></label>
+    <label class="field">${t('yourSpecialist')}<select id="book-specialist" required><option value="">${t('chooseSpecialist')}</option>${people.map(p=>`<option value="${p.id}" ${booking.specialist===p.id?'selected':''}>${t(p.id)}</option>`).join('')}</select></label>
+    <label class="field full">${t('yourDay')}<input id="book-date" type="date" required value="${booking.day}" aria-describedby="date-hint"></label><p class="hint full" id="date-hint">${t('dateHint')}</p>
+    <fieldset class="full"><legend>${t('availableTimes')}</legend><div class="slots" id="time-slots"></div><p class="hint" id="time-message" aria-live="polite"></p></fieldset>
+    <div class="booking-summary full" id="booking-summary"></div><button class="btn full" id="book-submit" disabled>${t('bookDemo')} ${arrow}</button><p class="hint full eclat-disclaimer">${t('bookingDisclaimer')}</p><div class="booking-result full" id="booking-result" role="status" aria-live="polite"></div>
+  </form>
+</section>
+${footer('salon')}
+</div></section>`;}

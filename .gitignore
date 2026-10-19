@@ -1,0 +1,6 @@
+# Logs
+*.log
+**/work/local-server*.log
+
+# Temporary deploy directories
+**/https-site/

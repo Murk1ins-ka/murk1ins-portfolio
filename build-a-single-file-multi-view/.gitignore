@@ -1,0 +1,6 @@
+# Logs
+*.log
+work/local-server*.log
+
+# Temp
+work/https-site/

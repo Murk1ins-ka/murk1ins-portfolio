@@ -1,0 +1,11 @@
+{
+ "ogEdition":["Новый дроп. Твой силуэт.","Colecție nouă. Silueta ta."],
+ "ogMaterial":["Хлопок / деним / металл","Bumbac / denim / metal"],
+ "ogTicker":["ВНЕ РАМОК","FĂRĂ LIMITE"],
+ "ogLook":["Всё чёрное.<br>Всё твоё.","Totul negru.<br>Totul al tău."],
+ "ogLookCopy":["Худи, baggy-деним и металл. Три вещи для одного образа.","Hanorac, denim baggy și metal. Trei piese pentru o ținută."],
+ "motionOn":["Анимации включены","Animații activate"],
+ "motionOff":["Анимации выключены","Animații dezactivate"],
+ "pauseMotion":["Отключить анимации","Oprește animațiile"],
+ "resumeMotion":["Включить анимации","Pornește animațiile"]
+}
